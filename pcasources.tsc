@@ -1,0 +1,49 @@
+<session name="demo" license="CC BY-SA 3.0" attribution="Freddie McCallum" playonload="true" loop="true">
+	<scene name="main" guiscale="6">
+
+
+	<receiver name="out1" type="lut"  gainFile="pca1gains.txt"><position>0 0 0 0</position><orientation importcsv="demo_04_data/stepped_rotation.csv" /></receiver>
+	<receiver name="out3" type="lut" gainFile="pca2gains.txt"><position>0 0 0 0</position><orientation importcsv="demo_04_data/stepped_rotation.csv" /></receiver>
+	
+	<source name="target0"><position>0 1.0 0.0 0</position><sound><plugins><pink level="90" fmax="16000" /></plugins></sound></source></scene>
+	
+	<modules>
+		<system command="jmatconvol mic1_16.conf" sleep="0.5"/>
+		<system command="jmatconvol mic2_16.conf" sleep="0.5"/>
+	</modules>
+
+	<connect src="render.main:out1.0" dest="jmatconvol:in.0" />
+	<connect src="render.main:out1.1" dest="jmatconvol:in.1" />
+	<connect src="render.main:out1.2" dest="jmatconvol:in.2" />
+	<connect src="render.main:out1.3" dest="jmatconvol:in.3" />
+	<connect src="render.main:out1.4" dest="jmatconvol:in.4" />
+	<connect src="render.main:out1.5" dest="jmatconvol:in.5" />
+	<connect src="render.main:out1.6" dest="jmatconvol:in.6" />
+	<connect src="render.main:out1.7" dest="jmatconvol:in.7" />
+	<connect src="render.main:out1.8" dest="jmatconvol:in.8" />
+	<connect src="render.main:out1.9" dest="jmatconvol:in.9" />
+	<connect src="render.main:out1.10" dest="jmatconvol:in.10" />
+	<connect src="render.main:out1.11" dest="jmatconvol:in.11" />
+	<connect src="render.main:out1.12" dest="jmatconvol:in.12" />
+	<connect src="render.main:out1.13" dest="jmatconvol:in.13" />
+	<connect src="render.main:out1.14" dest="jmatconvol:in.14" />
+	<connect src="render.main:out1.15" dest="jmatconvol:in.15" />
+	<connect src="render.main:out3.0" dest="jmatconvol-01:in.0" />
+	<connect src="render.main:out3.1" dest="jmatconvol-01:in.1" />
+	<connect src="render.main:out3.2" dest="jmatconvol-01:in.2" />
+	<connect src="render.main:out3.3" dest="jmatconvol-01:in.3" />
+	<connect src="render.main:out3.4" dest="jmatconvol-01:in.4" />
+	<connect src="render.main:out3.5" dest="jmatconvol-01:in.5" />
+	<connect src="render.main:out3.6" dest="jmatconvol-01:in.6" />
+	<connect src="render.main:out3.7" dest="jmatconvol-01:in.7" />
+	<connect src="render.main:out3.8" dest="jmatconvol-01:in.8" />
+	<connect src="render.main:out3.9" dest="jmatconvol-01:in.9" />
+	<connect src="render.main:out3.10" dest="jmatconvol-01:in.10" />
+	<connect src="render.main:out3.11" dest="jmatconvol-01:in.11" />
+	<connect src="render.main:out3.12" dest="jmatconvol-01:in.12" />
+	<connect src="render.main:out3.13" dest="jmatconvol-01:in.13" />
+	<connect src="render.main:out3.14" dest="jmatconvol-01:in.14" />
+	<connect src="render.main:out3.15" dest="jmatconvol-01:in.15" />
+
+
+</session>
